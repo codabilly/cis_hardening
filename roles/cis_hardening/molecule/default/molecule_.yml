@@ -1,0 +1,15 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: docker
+platforms:
+  # - name: instance
+  #   image: docker.io/pycontribs/centos:7
+  #   pre_build_image: true
+  - name: karoo-2
+    image: docker.io/bilorge/karoo:latest
+provisioner:
+  name: ansible
+verifier:
+  name: ansible

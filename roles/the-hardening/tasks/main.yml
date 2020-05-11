@@ -1,0 +1,5 @@
+---
+# tasks file for the-hardening
+- name: Molecule Hello World!!
+  debug:
+    msg: Hellios! World.

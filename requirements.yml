@@ -1,0 +1,7 @@
+---
+
+- src: https://github.com/MindPointGroup/RHEL7-CIS.git
+  version: 0.1.4
+  name: cis_hardening
+
+...
