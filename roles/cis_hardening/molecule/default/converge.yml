@@ -1,7 +1,6 @@
 ---
 - name: Converge
   hosts: all
-  become: true
   tasks:
     - name: "Include cis_hardening"
       include_role:

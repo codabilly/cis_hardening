@@ -25,7 +25,6 @@
       - patch
       - rule_1.1.1.1
       - cramfs
-  ignore_errors: true
 
 - name: "SCORED | 1.1.1.2 | PATCH | Ensure mounting of freevxfs filesystems is disabled"
   lineinfile:
@@ -373,7 +372,6 @@
 - name: "SCORED | 1.1.15 | PATCH | Ensure nodev option set on /dev/shm partition\n
          SCORED | 1.1.16 | PATCH | Ensure nosuid option set on /dev/shm partition\n
          SCORED | 1.1.17 | PATCH | Ensure noexec option set on /dev/shm partition"
-  become: true
   mount:
       name: /dev/shm
       src: tmpfs
@@ -619,7 +617,7 @@
       group: root
       mode: 0600
   when:
-    #   - grub_cfg.stat.exists and grub_cfg.stat.islnk
+      - grub_cfg.stat.exists and grub_cfg.stat.islnk
       - rhel7cis_rule_1_4_1
   tags:
       - level1

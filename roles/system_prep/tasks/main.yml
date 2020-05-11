@@ -1,43 +1,43 @@
 ---
 # tasks file for system_prep
 
-# - name: Check ansible version
-#   fail:
-#       msg: 
-#         - ansible_version.full
-#         - You must use ansible 2.1 or greater
-#   when: ansible_version.full is version('2.1', '>=')
+- name: Check ansible version
+  fail:
+      msg: 
+        - ansible_version.full
+        - You must use ansible 2.1 or greater
+  when: ansible_version.full is version('2.1', '>=')
 
-- name: Register EPEL repository
-  yum_repository:
-    name: epel
-    file: epel
-    enabled: yes
-    gpgcheck: no
-    description: Extra Packages for Enterprise Linux 7 - $basearch
-    baseurl: http://download.fedoraproject.org/pub/epel/7/$basearch
-    metalink: https://mirrors.fedoraproject.org/metalink?repo=epel-7&arch=$basearch&infra=$infra&content=$contentdir
+# - name: Register EPEL repository
+#   yum_repository:
+#     name: epel
+#     file: epel
+#     enabled: yes
+#     gpgcheck: no
+#     description: Extra Packages for Enterprise Linux 7 - $basearch
+#     baseurl: http://download.fedoraproject.org/pub/epel/7/$basearch
+#     metalink: https://mirrors.fedoraproject.org/metalink?repo=epel-7&arch=$basearch&infra=$infra&content=$contentdir
 
 
-- name: Register EPEL Debug repository
-  yum_repository:
-    name: epel-debuginfo
-    file: epel
-    enabled: yes
-    gpgcheck: no
-    description: Extra Packages for Enterprise Linux 7 - $basearch - Debug
-    baseurl: http://download.fedoraproject.org/pub/epel/7/$basearch/debug
-    metalink: https://mirrors.fedoraproject.org/metalink?repo=epel-debug-7&arch=$basearch&infra=$infra&content=$contentdir
+# - name: Register EPEL Debug repository
+#   yum_repository:
+#     name: epel-debuginfo
+#     file: epel
+#     enabled: yes
+#     gpgcheck: no
+#     description: Extra Packages for Enterprise Linux 7 - $basearch - Debug
+#     baseurl: http://download.fedoraproject.org/pub/epel/7/$basearch/debug
+#     metalink: https://mirrors.fedoraproject.org/metalink?repo=epel-debug-7&arch=$basearch&infra=$infra&content=$contentdir
 
-- name: Register EPEL Sources repository
-  yum_repository:
-    name: epel-source
-    file: epel
-    enabled: yes
-    gpgcheck: no
-    description: Extra Packages for Enterprise Linux 7 - $basearch - Source
-    baseurl: http://download.fedoraproject.org/pub/epel/7/SRPMS
-    metalink: https://mirrors.fedoraproject.org/metalink?repo=epel-source-7&arch=$basearch&infra=$infra&content=$contentdir
+# - name: Register EPEL Sources repository
+#   yum_repository:
+#     name: epel-source
+#     file: epel
+#     enabled: yes
+#     gpgcheck: no
+#     description: Extra Packages for Enterprise Linux 7 - $basearch - Source
+#     baseurl: http://download.fedoraproject.org/pub/epel/7/SRPMS
+#     metalink: https://mirrors.fedoraproject.org/metalink?repo=epel-source-7&arch=$basearch&infra=$infra&content=$contentdir
 
 # - name: install packages required to run ansible
 #   yum:

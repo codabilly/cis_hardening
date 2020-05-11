@@ -10,16 +10,15 @@
 #   tags:
 #       - always
 
-###
-
-# - name: Check ansible version
-#   fail:
-#       msg: 
-#         - ansible_version.full
-#         - You must use ansible 2.1 or greater
-#   when: not ansible_version.full is version('2.1', '>=')
-#   tags:
-#       - always
+# --
+- name: Check ansible version
+  fail:
+      msg: 
+        - ansible_version.full
+        - You must use ansible 2.1 or greater
+  when: not ansible_version.full is version('2.1', '>=')
+  tags:
+      - always
 
 - include: prelim.yml
   become: yes

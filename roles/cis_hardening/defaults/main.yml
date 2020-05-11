@@ -25,7 +25,7 @@ rhel7cis_rule_1_1_1_5: false #modified
 rhel7cis_rule_1_1_1_6: false #modified
 rhel7cis_rule_1_1_1_7: false #modified
 rhel7cis_rule_1_1_1_8: false #modified
-rhel7cis_rule_1_1_2: false #modfied
+rhel7cis_rule_1_1_2: true
 rhel7cis_rule_1_1_3: true
 rhel7cis_rule_1_1_4: true
 rhel7cis_rule_1_1_5: true
@@ -37,10 +37,10 @@ rhel7cis_rule_1_1_10: true
 rhel7cis_rule_1_1_11: true
 rhel7cis_rule_1_1_12: true
 rhel7cis_rule_1_1_13: true
-rhel7cis_rule_1_1_14: true
-rhel7cis_rule_1_1_15: false #modfied
-rhel7cis_rule_1_1_16: false #modfied
-rhel7cis_rule_1_1_17: false #modfied
+rhel7cis_rule_1_1_14: false #modified
+rhel7cis_rule_1_1_15: false #modified
+rhel7cis_rule_1_1_16: true
+rhel7cis_rule_1_1_17: true
 rhel7cis_rule_1_1_18: true
 rhel7cis_rule_1_1_19: true
 rhel7cis_rule_1_1_20: true
@@ -51,24 +51,24 @@ rhel7cis_rule_1_2_2: true
 rhel7cis_rule_1_2_3: true
 rhel7cis_rule_1_2_4: true
 rhel7cis_rule_1_2_5: true
-rhel7cis_rule_1_3_1: true
+rhel7cis_rule_1_3_1: true #when runnig with --check -D this value has to be se to false
 rhel7cis_rule_1_3_2: true
-rhel7cis_rule_1_4_1: false #modfied
+rhel7cis_rule_1_4_1: true
 rhel7cis_rule_1_4_2: true
 rhel7cis_rule_1_4_3: true
-rhel7cis_rule_1_5_1: false #modfied
-rhel7cis_rule_1_5_2: false #modfied
-rhel7cis_rule_1_5_3: false #modfied
-rhel7cis_rule_1_5_4: false #modfied
+rhel7cis_rule_1_5_1: true
+rhel7cis_rule_1_5_2: true
+rhel7cis_rule_1_5_3: true
+rhel7cis_rule_1_5_4: true
 rhel7cis_rule_1_6_1_1: true
-rhel7cis_rule_1_6_1_2: true
-rhel7cis_rule_1_6_1_3: true
+rhel7cis_rule_1_6_1_2: false #modified
+rhel7cis_rule_1_6_1_3: false #modified
 rhel7cis_rule_1_6_1_4: true
 rhel7cis_rule_1_6_1_5: true
 rhel7cis_rule_1_6_2: true
-rhel7cis_rule_1_7_1_1: true
-rhel7cis_rule_1_7_1_2: true
-rhel7cis_rule_1_7_1_3: true
+rhel7cis_rule_1_7_1_1: true #
+rhel7cis_rule_1_7_1_2: true #
+rhel7cis_rule_1_7_1_3: true #
 rhel7cis_rule_1_7_1_4: true
 rhel7cis_rule_1_7_1_5: true
 rhel7cis_rule_1_7_1_6: true
@@ -85,13 +85,13 @@ rhel7cis_rule_2_1_6: true
 rhel7cis_rule_2_1_7: true
 rhel7cis_rule_2_2_1_1: true
 rhel7cis_rule_2_2_1_2: true
-rhel7cis_rule_2_2_1_3: true
-rhel7cis_rule_2_2_2: true
+rhel7cis_rule_2_2_1_3: false #modified
+rhel7cis_rule_2_2_2: false #modified
 rhel7cis_rule_2_2_3: true
 rhel7cis_rule_2_2_4: true
 rhel7cis_rule_2_2_5: true
 rhel7cis_rule_2_2_6: true
-rhel7cis_rule_2_2_7: true
+rhel7cis_rule_2_2_7: false #modified
 rhel7cis_rule_2_2_8: true
 rhel7cis_rule_2_2_9: true
 rhel7cis_rule_2_2_10: true
@@ -110,41 +110,41 @@ rhel7cis_rule_2_3_1: true
 rhel7cis_rule_2_3_2: true
 rhel7cis_rule_2_3_3: true
 rhel7cis_rule_2_3_4: true
-rhel7cis_rule_2_3_5: true
+rhel7cis_rule_2_3_5: false #modified
 
 # Section 3 rules
-rhel7cis_rule_3_1_1: true
-rhel7cis_rule_3_1_2: true
-rhel7cis_rule_3_2_1: true
-rhel7cis_rule_3_2_2: true
-rhel7cis_rule_3_2_3: true
+rhel7cis_rule_3_1_1: false #modified
+rhel7cis_rule_3_1_2: false #modified
+rhel7cis_rule_3_2_1: false #modified
+rhel7cis_rule_3_2_2: false #modified
+rhel7cis_rule_3_2_3: false #modified
 rhel7cis_rule_3_2_4: true
-rhel7cis_rule_3_2_5: true
+rhel7cis_rule_3_2_5: false #modified
 rhel7cis_rule_3_2_6: true
-rhel7cis_rule_3_2_7: true
-rhel7cis_rule_3_2_8: true
-rhel7cis_rule_3_3_1: true
-rhel7cis_rule_3_3_2: true
+rhel7cis_rule_3_2_7: false #modified
+rhel7cis_rule_3_2_8: false #modified
+rhel7cis_rule_3_3_1: false #modified
+rhel7cis_rule_3_3_2: false #modified
 rhel7cis_rule_3_3_3: true
 rhel7cis_rule_3_4_1: true
-rhel7cis_rule_3_4_2: true
-rhel7cis_rule_3_4_3: true
+rhel7cis_rule_3_4_2: false #modified
+rhel7cis_rule_3_4_3: false #modified
 rhel7cis_rule_3_4_4: true
 rhel7cis_rule_3_4_5: true
-rhel7cis_rule_3_5_1: true
-rhel7cis_rule_3_5_2: true
-rhel7cis_rule_3_5_3: true
-rhel7cis_rule_3_5_4: true
+rhel7cis_rule_3_5_1: false #modified
+rhel7cis_rule_3_5_2: false #modified
+rhel7cis_rule_3_5_3: false #modified
+rhel7cis_rule_3_5_4: false #modified
 rhel7cis_rule_3_6_1: true
-rhel7cis_rule_3_6_2: true
+rhel7cis_rule_3_6_2: false #modified
 rhel7cis_rule_3_6_3: true
 rhel7cis_rule_3_6_4: true
-rhel7cis_rule_3_6_5: true
+rhel7cis_rule_3_6_5: false #modified
 
 # Section 4 rules
 rhel7cis_rule_4_1_1_1: true
-rhel7cis_rule_4_1_1_2: true
-rhel7cis_rule_4_1_1_3: true
+rhel7cis_rule_4_1_1_2: false #modified
+rhel7cis_rule_4_1_1_3: false #modified
 rhel7cis_rule_4_1_2: true
 rhel7cis_rule_4_1_3: true
 rhel7cis_rule_4_1_4: true
@@ -177,40 +177,40 @@ rhel7cis_rule_4_2_4: true
 
 # Section 5 rules
 rhel7cis_rule_5_1_1: true
-rhel7cis_rule_5_1_2: true
-rhel7cis_rule_5_1_3: true
-rhel7cis_rule_5_1_4: true
-rhel7cis_rule_5_1_5: true
-rhel7cis_rule_5_1_6: true
-rhel7cis_rule_5_1_7: true
-rhel7cis_rule_5_1_8: true
+rhel7cis_rule_5_1_2: false #modified
+rhel7cis_rule_5_1_3: false #modified
+rhel7cis_rule_5_1_4: false #modified
+rhel7cis_rule_5_1_5: false #modified
+rhel7cis_rule_5_1_6: false #modified
+rhel7cis_rule_5_1_7: false #modified
+rhel7cis_rule_5_1_8: false #modified
 rhel7cis_rule_5_2_1: true
-rhel7cis_rule_5_2_2: true
+rhel7cis_rule_5_2_2: false #modified
 rhel7cis_rule_5_2_3: true
-rhel7cis_rule_5_2_4: true
-rhel7cis_rule_5_2_5: true
-rhel7cis_rule_5_2_6: true
-rhel7cis_rule_5_2_7: true
-rhel7cis_rule_5_2_8: true
-rhel7cis_rule_5_2_9: true
-rhel7cis_rule_5_2_10: true
-rhel7cis_rule_5_2_11: true
-rhel7cis_rule_5_2_12: true
-rhel7cis_rule_5_2_13: true
-rhel7cis_rule_5_2_14: true
+rhel7cis_rule_5_2_4: false #modified
+rhel7cis_rule_5_2_5: false #modified
+rhel7cis_rule_5_2_6: false #modified
+rhel7cis_rule_5_2_7: false #modified
+rhel7cis_rule_5_2_8: false #modified
+rhel7cis_rule_5_2_9: false #modified
+rhel7cis_rule_5_2_10: false #modified
+rhel7cis_rule_5_2_11: true #
+rhel7cis_rule_5_2_12: true #
+rhel7cis_rule_5_2_13: false #modified
+rhel7cis_rule_5_2_14: true #
 rhel7cis_rule_5_2_15: true
-rhel7cis_rule_5_2_16: true
-rhel7cis_rule_5_3_1: true
-rhel7cis_rule_5_3_2: true
-rhel7cis_rule_5_3_3: true
-rhel7cis_rule_5_3_4: true
-rhel7cis_rule_5_4_1_1: true
-rhel7cis_rule_5_4_1_2: true
-rhel7cis_rule_5_4_1_3: true
-rhel7cis_rule_5_4_1_4: true
+rhel7cis_rule_5_2_16: false #modified
+rhel7cis_rule_5_3_1: false #modified
+rhel7cis_rule_5_3_2: false #modified
+rhel7cis_rule_5_3_3: false #modified
+rhel7cis_rule_5_3_4: false #modified
+rhel7cis_rule_5_4_1_1: false #modified
+rhel7cis_rule_5_4_1_2: false #modified
+rhel7cis_rule_5_4_1_3: false #modified
+rhel7cis_rule_5_4_1_4: false #modified
 rhel7cis_rule_5_4_2: true
 rhel7cis_rule_5_4_3: true
-rhel7cis_rule_5_4_4: true
+rhel7cis_rule_5_4_4: false #modified
 
 # Section 6 rules
 rhel7cis_rule_6_1_1: true
@@ -220,8 +220,8 @@ rhel7cis_rule_6_1_4: true
 rhel7cis_rule_6_1_5: true
 rhel7cis_rule_6_1_6: true
 rhel7cis_rule_6_1_7: true
-rhel7cis_rule_6_1_8: true
-rhel7cis_rule_6_1_9: true
+rhel7cis_rule_6_1_8: false #modified
+rhel7cis_rule_6_1_9: false #modified
 rhel7cis_rule_6_1_10: true
 rhel7cis_rule_6_1_11: true
 rhel7cis_rule_6_1_12: true
@@ -337,8 +337,9 @@ rhel7cis_host_allow:
     - "172.16.0.0/255.240.0.0"
     - "192.168.0.0/255.255.0.0"
 
-rhel7cis_firewall: firewalld
-#rhel7cis_firewall: iptables
+# rhel7cis_firewall: firewalld #modified
+# rhel7cis_firewall: iptables
+rhel7cis_firewall: nope #setting this as we dont want any of these services installed
 
 rhel7cis_firewall_services:
     - ssh

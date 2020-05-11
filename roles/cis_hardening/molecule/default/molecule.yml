@@ -9,8 +9,8 @@ dependency:
 driver:
   name: docker
 platforms:
-  - name: CIS_HARDENING
-    image: bilorge/karoo  
+  - name: karoo
+    image: amazonlinux  
 # docker:
 #   containers:
 #     - name: docker
