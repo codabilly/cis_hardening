@@ -116,10 +116,10 @@ rhel7cis_rule_2_3_5: false #modified
 rhel7cis_rule_3_1_1: false #modified
 rhel7cis_rule_3_1_2: false #modified
 rhel7cis_rule_3_2_1: false #modified
-rhel7cis_rule_3_2_2: false #modified
-rhel7cis_rule_3_2_3: false #modified
+rhel7cis_rule_3_2_2: true #modified
+rhel7cis_rule_3_2_3: true #modified
 rhel7cis_rule_3_2_4: true
-rhel7cis_rule_3_2_5: false #modified
+rhel7cis_rule_3_2_5: true #modified
 rhel7cis_rule_3_2_6: true
 rhel7cis_rule_3_2_7: false #modified
 rhel7cis_rule_3_2_8: false #modified
