@@ -173,6 +173,20 @@
       - patch
       - rule_5.2.2
 
+- name: "SCORED | 5.2.2.1 | PATCH | Ensure SSH Protocol is set to 2"
+  lineinfile:
+      state: present
+      dest: /etc/ssh/sshd_config
+      regexp: '^KexAlgorithms'
+      line: 'KexAlgorithms curve25519-sha256@libssh.org,ecdh-sha2-nistp521,ecdh-sha2-nistp384,ecdh-sha2-nistp256,diffie-hellman-group-exchange-sha256'
+  when:
+      - rhel7cis_rule_5_2_2_1
+  tags:
+      - level1
+      - level2
+      - patch
+      - rule_5.2.2
+
 - name: "SCORED | 5.2.3 | PATCH | Ensure SSH LogLevel is set to INFO"
   lineinfile:
       state: present

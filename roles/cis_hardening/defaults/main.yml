@@ -186,6 +186,7 @@ rhel7cis_rule_5_1_7: false #modified
 rhel7cis_rule_5_1_8: false #modified
 rhel7cis_rule_5_2_1: true
 rhel7cis_rule_5_2_2: true #modified
+rhel7cis_rule_5_2_2_1: true
 rhel7cis_rule_5_2_3: true
 rhel7cis_rule_5_2_4: false #modified
 rhel7cis_rule_5_2_5: false #modified
