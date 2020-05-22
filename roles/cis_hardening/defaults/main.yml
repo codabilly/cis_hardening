@@ -373,6 +373,8 @@ rhel7cis_sshd:
     #denyusers:
     #denygroups:
 
+lockdown_script_name: .secureme.sh
+
 rhel7cis_pass:
     max_days: 90
     min_days: 7

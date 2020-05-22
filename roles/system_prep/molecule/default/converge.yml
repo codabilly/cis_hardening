@@ -1,7 +1,0 @@
----
-- name: Converge
-  hosts: all
-  tasks:
-    - name: "Include system_prep"
-      include_role:
-        name: "system_prep"

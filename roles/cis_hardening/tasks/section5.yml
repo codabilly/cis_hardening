@@ -578,6 +578,33 @@
             path: /etc/profile
             regexp: '(^\s+umask) 002'
             replace: '\1 027'
+
+      - name: NOTSCORED | 5.4.4 | PATCH | Create lock down script in /etc/skel folder
+        lineinfile:
+          path: "/etc/skel/{{ lockdown_script_name }}"
+          create: yes
+          line: "{{ item }}"
+          loop:
+            - "#!/bin/bash"
+            - "chmod 700 $HOME"
+
+      - name: NOTSCORED | 5.4.4 | PATCH | Include "{{ lockdown_script_name }}" reference in .bashrc
+        lineinfile:
+          path: "/etc/skel/.bashrc"
+          create: yes
+          line: "{{ item }}"
+        loop:
+          - "# securing home folder"
+          - "sh ./{{ lockdown_script_name }}"
+
+      - name: NOTSCORED | 5.4.4 | PATCH | Include "{{ lockdown_script_name }}" reference in .zshrc
+        lineinfile:
+          path: "/etc/skel/.zshrc"
+          create: yes
+          line: "{{ item }}"
+        loop:
+          - "# securing home folder"
+          - "sh ./{{ lockdown_script_name }}"
   when:
       - rhel7cis_rule_5_4_4
   tags:
