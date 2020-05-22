@@ -584,7 +584,7 @@
           path: "/etc/skel/{{ lockdown_script_name }}"
           create: yes
           line: "{{ item }}"
-          loop:
+        loop:
             - "#!/bin/bash"
             - "chmod 700 $HOME"
 
